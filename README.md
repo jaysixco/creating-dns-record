@@ -37,31 +37,47 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<strong> Part 1: Create a Ticket (User) </strong> <br>
-&nbsp  Copy this link: http://localhost/osTicket/ <br>
-&nbsp  Open a new tab <br>
-&nbsp  Paste the link in the url and press Enter key <br>
-&nbsp  Click "Open a new Ticket" <br>
-&nbsp  Fill in all the boxes with the red star next to it <br>
-&nbsp&nbsp&nbsp&nbsp <em>Include screenshot</em> <br>
-&nbsp  Click "Create Ticket" <br>
-<strong> Part 2: Delegate the ticket (Admin) </strong><br>
-&nbsp;  Log in as administrator <br>
-&nbsp;&nbsp;&nbsp;&nbsp; Copy and paste this link - http://localhost/osTicket/scp/login.php - in a new tab <br>
-&nbsp;&nbsp;&nbsp;&nbsp; Type in your admin's created username and password <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Username:Jay <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Password: Password1 <br>
-&nbsp;   Click ticket <br>
-&nbsp;   Click Reassign <br>
-&nbsp;&nbsp;&nbsp;&nbsp; <em>Include screenshot</em> <br>
-<strong> Part 3: Change the priority level of the ticket </strong> <br>
-&nbsp;   Click ticket <br>
-&nbsp;   Click "SLA Plan" <br>
-&nbsp;   Click Sev-A <br>
-&nbsp;   Click "Update" <br>
-&nbsp;&nbsp;&nbsp;&nbsp; Include screenshot <br>
-<strong> Part 4: Solve the ticket (Agent) </strong> <br>
-&nbsp;   Log in as agent
+A-Record Exercise
+Connect/log into DC-1 as your domain admin account (mydomain.com\jane_admin)
+Connect/log into Client-1 as an admin (mydomain\jane_admin)
+From Client-1 try to ping “mainframe” notice that it fails
+Nslookup “mainframe” notice that it fails (no DNS record)
+Create a DNS A-record on DC-1 for “mainframe” and have it point to DC-1’s Private IP address
+Go back to Client-1 and try to ping it. Observe that it works
+
+Local DNS Cache Exercise
+Go back to DC-1 and change mainframe’s record address to 8.8.8.8
+Go back to Client-1 and ping “mainframe” again. Observe that it still pings the old address
+Observe the local dns cache (ipconfig /displaydns)
+Flush the DNS cache (ipconfig /flushdns). Observe that the cache is empty
+Attempt to ping “mainframe” again. Observe the address of the new record is showing up
+
+CNAME Record Exercise
+Go back to DC-1 and create a CNAME record that points the host “search” to “www.google.com”
+Go back to Client-1 and attempt to ping “search”, observe the results of the CNAME record
+On Client-1, nslookup “search”, observe the results of the CNAME record
+Extra steps  (basically checking to see if everything works)
+
+Finish
+
+Essential Steps:
+Create a DNS A-record (5)
+Change mainframe record address to 8.8.8.8 (7)
+Flush the DNS cache (10)
+Create CNAME record (12)
+Recognize the pattern of above steps?
+
+Actually…
+
+You can combine steps 5, 7, and 12 all in one. So really it COULD look like:
+
+Create a DNS A-record (name it mainframe, put the IP address as 8.8.8.8, click ok) and then create a CNAME record (search, www.google.com)
+Go to cmd (run as admin, still in DC-1), type (in order):
+ipconfig /flushdns, 
+ping search
+nslookup search
+ipconfig /displaydns 
+
 </p>
 <br />
 <p>
