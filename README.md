@@ -37,46 +37,59 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-A-Record Exercise
-Connect/log into DC-1 as your domain admin account (mydomain.com\jane_admin)
-Connect/log into Client-1 as an admin (mydomain\jane_admin)
-From Client-1 try to ping “mainframe” notice that it fails
-Nslookup “mainframe” notice that it fails (no DNS record)
-Create a DNS A-record on DC-1 for “mainframe” and have it point to DC-1’s Private IP address
-Go back to Client-1 and try to ping it. Observe that it works
+<strong> A-Record Exercise </strong><br>
+Connect/log into DC-1 as your domain admin account (mydomain.com\jane_admin) <br>
+Connect/log into Client-1 as an admin (mydomain\jane_admin) <br>
+From Client-1 try to ping “mainframe” notice that it fails <br>
+Nslookup “mainframe” notice that it fails (no DNS record) <br>
+Create a DNS A-record on DC-1 for “mainframe” and have it point to DC-1’s Private IP address <br>
+Go back to Client-1 and try to ping it. Observe that it works <br>
 
-Local DNS Cache Exercise
-Go back to DC-1 and change mainframe’s record address to 8.8.8.8
-Go back to Client-1 and ping “mainframe” again. Observe that it still pings the old address
-Observe the local dns cache (ipconfig /displaydns)
-Flush the DNS cache (ipconfig /flushdns). Observe that the cache is empty
-Attempt to ping “mainframe” again. Observe the address of the new record is showing up
+<strong> Local DNS Cache Exercise </strong><br>
+Go back to DC-1 and change mainframe’s record address to 8.8.8.8 <br>
+Go back to Client-1 and ping “mainframe” again. Observe that it still pings the old address <br>
+Observe the local dns cache (ipconfig /displaydns) <br>
+Flush the DNS cache (ipconfig /flushdns). Observe that the cache is empty <br>
+Attempt to ping “mainframe” again. Observe the address of the new record is showing up <br>
 
-CNAME Record Exercise
-Go back to DC-1 and create a CNAME record that points the host “search” to “www.google.com”
-Go back to Client-1 and attempt to ping “search”, observe the results of the CNAME record
-On Client-1, nslookup “search”, observe the results of the CNAME record
-Extra steps  (basically checking to see if everything works)
+<strong> CNAME Record Exercise </strong><br>
+Go back to DC-1 and create a CNAME record that points the host “search” to “www.google.com” <br>
+Go back to Client-1 and attempt to ping “search”, observe the results of the CNAME record <br>
+On Client-1, nslookup “search”, observe the results of the CNAME record <br>
+Extra steps  (basically checking to see if everything works) <br>
+&nbsp;&nbsp; Cmd > <br>
+ping search > <br>
+ipconfig /displaydns <br>
+[Should see: <br>
+search <br>
+Record name: search mydomain.com <br>
+Record name: www.google.com] <br>
 
-Finish
+ALSO: if above steps don't work, trying flushing the cache first (ipconfig /flushdns) and then repeat. <br>
+
+If you type search mydomain.com into Microsoft Edge, it'll try to take you to Google (but it'll show error because certificates don't match, still we forced it to acknowledge search as google. Main thing is the cmd part).<br>
+
+<strong> Finish </strong>
 
 Essential Steps:
-Create a DNS A-record (5)
-Change mainframe record address to 8.8.8.8 (7)
-Flush the DNS cache (10)
-Create CNAME record (12)
-Recognize the pattern of above steps?
+Create a DNS A-record (5) <br>
+&nbsp;&nbsp; Server Manager > Tools (near top, to the right of the flag > DNS > Expand DC-1 > Expand Forward Looking Zone > click mydomain.com > right click white space > select New Host (A) > type mainframe > type whatever IP address you want (prof used dc-1's as an example) > click Add Host (don't have to click any of the checkboxes above) > click Done <br>
+Change mainframe record address to 8.8.8.8 (7) <br>
+Flush the DNS cache (10) <br>
+Create CNAME record (12) <br>
+&nbsp;&nbsp; DNS manager (to get here, follow same steps as step 5) > Right click + select New Alias (literally says CNAME) > Literally type search in first box and www.google.com in second box (literally sooooooo easy 😩) > Do I need to check box? Nope > Click ok <br>
+Recognize the pattern of above steps? <br>
 
-Actually…
+Actually… <br>
 
-You can combine steps 5, 7, and 12 all in one. So really it COULD look like:
+You can combine steps 5, 7, and 12 all in one. So really it COULD look like: <br>
 
-Create a DNS A-record (name it mainframe, put the IP address as 8.8.8.8, click ok) and then create a CNAME record (search, www.google.com)
-Go to cmd (run as admin, still in DC-1), type (in order):
-ipconfig /flushdns, 
-ping search
-nslookup search
-ipconfig /displaydns 
+Create a DNS A-record (name it mainframe, put the IP address as 8.8.8.8, click ok) and then create a CNAME record (search, www.google.com) <br>
+Go to cmd (run as admin, still in DC-1), type (in order): <br>
+ipconfig /flushdns, <br>
+ping search <br>
+nslookup search <br>
+ipconfig /displaydns <br>
 
 </p>
 <br />
