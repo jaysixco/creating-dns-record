@@ -96,8 +96,8 @@ Go back to DC-1 and create a CNAME record that points the host “search” to �
 <strong>What you should see</strong><br>
 <em>Insert screenshot </em>
 <br>
-<strong>NOTE:</strong>if above steps don't work, try flushing the cache first (ipconfig /flushdns) and then ping again. <br>
-
+<strong>NOTE:</strong> if above steps don't work, try flushing the cache first (ipconfig /flushdns) and then ping again. <br>
+<br>
 <strong> Finish </strong>
 </p>
 <br />
