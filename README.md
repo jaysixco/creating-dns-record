@@ -72,16 +72,16 @@ To see for yourself:
 Go back to DC-1 and create a CNAME record that points the host “search” to “www.google.com” <br>
 <strong>To create a CNAME record</strong><br>
 &nbsp;&nbsp; DNS manager > Right click + select New Alias (literally says CNAME) > Literally type search in first box and www.google.com in second box (literally sooooooo easy 😩) > Do I need to check box? Nope > Click ok <br>
-Switch to Client-1.
- -Ping “search”
- -Nslookup “search” <br>
+Switch to Client-1 <br>
+&nbsp;&nbsp; Ping “search” <br>
+&nbsp;&nbsp; Nslookup “search” <br>
 <strong>To see if it works:</strong><br>
 &nbsp;&nbsp; Cmd > ping search > ipconfig /displaydns 
 <br>
-**What you should see:** <br>
+<strong>What you should see</strong><br>
 <em>Insert screenshot </em>
 <br>
-**NOTE*: if above steps don't work, try flushing the cache first (ipconfig /flushdns) and then repeat. <br>
+<strong>NOTE:</strong>if above steps don't work, try flushing the cache first (ipconfig /flushdns) and then repeat. <br>
 
 <strong> Finish </strong>
 
