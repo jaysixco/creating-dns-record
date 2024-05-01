@@ -45,12 +45,23 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
     So, log into DC-1 with your domain admin account (mydomain.com\jane_admin) and create a DNS A-record for "mainframe" <br>
     Have the DNS A-record point to DC-1’s Private IP address <br>
     Log back into Client-1 and ping "mainframe" again. It should work this time. <br></em>
-<strong>Simplified Version:</strong>
-&nbsp;&nbsp; Log into DC-1 <br>
-&nbsp;&nbsp; Create a DNS A-record for "mainframe" <br>
-  &nbsp;&nbsp; Server Manager > Tools (near top, to the right of the flag > DNS > Expand DC-1 > Expand Forward Looking Zone > click mydomain.com > right click white space > select New Host (A) > type mainframe > type whatever IP address you want (prof used dc-1's as an example) > click Add Host (don't have to click any of the checkboxes above) > click Done <br>
-&nbsp;&nbsp; Log into Client-1 <br>
-&nbsp;&nbsp; Ping "mainframe" <br>
+<strong>Simplified Version:</strong><br>
+Log into DC-1 <br>
+<strong>Create a DNS A-record for "mainframe"</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Server Manager > <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Tools (near top, to the right of the flag > <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   DNS > <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Expand DC-1 > <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Expand Forward Looking Zone > <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Click mydomain.com > <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Right click the white space > <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Click New Host (A) > <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Type mainframe > <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Type whatever IP address you want (prof used dc-1's as an example) ><br> 
+&nbsp;&nbsp;&nbsp;&nbsp;   Click Add Host (don't have to click any of the checkboxes above) > <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Click Done <br>
+Log into Client-1 <br>
+Ping "mainframe" <br>
 
 
 <strong> Local DNS Cache Exercise </strong><br>
