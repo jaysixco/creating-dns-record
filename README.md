@@ -51,7 +51,7 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Server Manager > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Tools (near top, to the right of the flag > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - DNS > <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   - <em>Insert screenshot here </em>
+&nbsp;&nbsp;&nbsp;&nbsp;   - <em>Insert screenshot here </em><br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Click "DC-1" in the sidebar > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Click "Forward Looking Zone" in the sidebar > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Click "mydomain.com" in the sidebar > <br>
@@ -85,18 +85,15 @@ Go back to DC-1 and create a CNAME record that points the host “search” to �
 <strong>To create a CNAME record</strong><br>
 &nbsp;&nbsp; - DNS manager ><br>
 &nbsp;&nbsp; - Right click + select New Alias (literally says CNAME) ><br>
-&nbsp;&nbsp;&nbsp;&nbsp;   - <em>Insert screenshot here </em>
+&nbsp;&nbsp;&nbsp;&nbsp;   - <em>Insert screenshot here </em><br>
 &nbsp;&nbsp; - Literally type search in first box and www.google.com in second box (literally sooooooo easy 😩) ><br>
 &nbsp;&nbsp; - Do I need to check box? Nope > <br>
 &nbsp;&nbsp; - Click ok <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   - <em>Insert screenshot here </em>
+&nbsp;&nbsp;&nbsp;&nbsp;   - <em>Insert screenshot here </em><br>
 <strong> Switch to Client-1 </strong><br>
 &nbsp;&nbsp; - Ping “search” <br>
 &nbsp;&nbsp; - Nslookup “search” <br>
-<strong>To see if it works:</strong><br>
-&nbsp;&nbsp; - Cmd > ping search > ipconfig /displaydns 
-<br>
-<strong>What you should see</strong><br>
+<strong>If you did everything correctly you should see</strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - <em>Insert screenshot here </em>
 <br>
 <strong>NOTE:</strong> if above steps don't work, try flushing the cache first (ipconfig /flushdns) and then ping again. <br>
