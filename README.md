@@ -84,10 +84,12 @@ Basically, if you change the mainframe's record address, when you ping it, it wi
 Go back to DC-1 and create a CNAME record that points the host “search” to “www.google.com” <br>
 <strong>To create a CNAME record</strong><br>
 &nbsp;&nbsp; - DNS manager ><br>
-&nbsp;&nbsp; - Right click + select New Alias (literally says CNAME) ><br> 
+&nbsp;&nbsp; - Right click + select New Alias (literally says CNAME) ><br>
+&nbsp;&nbsp;&nbsp;&nbsp;   - <em>Insert screenshot here </em>
 &nbsp;&nbsp; - Literally type search in first box and www.google.com in second box (literally sooooooo easy 😩) ><br>
 &nbsp;&nbsp; - Do I need to check box? Nope > <br>
 &nbsp;&nbsp; - Click ok <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   - <em>Insert screenshot here </em>
 <strong> Switch to Client-1 </strong><br>
 &nbsp;&nbsp; - Ping “search” <br>
 &nbsp;&nbsp; - Nslookup “search” <br>
@@ -95,7 +97,7 @@ Go back to DC-1 and create a CNAME record that points the host “search” to �
 &nbsp;&nbsp; - Cmd > ping search > ipconfig /displaydns 
 <br>
 <strong>What you should see</strong><br>
-<em>Insert screenshot </em>
+&nbsp;&nbsp;&nbsp;&nbsp;   - <em>Insert screenshot here </em>
 <br>
 <strong>NOTE:</strong> if above steps don't work, try flushing the cache first (ipconfig /flushdns) and then ping again. <br>
 <br>
