@@ -51,17 +51,18 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Server Manager > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Tools (near top, to the right of the flag > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - DNS > <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   - Expand DC-1 > <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   - Expand Forward Looking Zone > <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   - Click mydomain.com > <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   - <em>Insert screenshot here </em>
+&nbsp;&nbsp;&nbsp;&nbsp;   - Click "DC-1" in the sidebar > <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   - Click "Forward Looking Zone" in the sidebar > <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   - Click "mydomain.com" in the sidebar > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Right click the white space > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Click New Host (A) > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Type mainframe > <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   - Type whatever IP address you want (prof used dc-1's as an example) ><br> 
+&nbsp;&nbsp;&nbsp;&nbsp;   - Type whatever IP address (public or private?) you want (prof used dc-1's as an example) ><br> 
 &nbsp;&nbsp;&nbsp;&nbsp;   - Click Add Host (don't have to click any of the checkboxes above) > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Click Done <br>
 <strong> Log into Client-1 </strong><br>
-<strong> Ping "mainframe" </strong><br>
+<strong> Type "cmd" in search bar > then ping "mainframe" (without quotation marks) </strong><br>
 
 
 <strong> Local DNS Cache Exercise </strong><br>
