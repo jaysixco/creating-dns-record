@@ -51,14 +51,15 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Server Manager > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Tools (near top, to the right of the flag > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - DNS > <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   - <em>Insert screenshot here </em><br>
+<img width="959" alt="Capture - Tools + DNS" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/c60fa30d-a54a-45f6-8830-1f6f7f2e1f3b">
+<br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Click "DC-1" in the sidebar > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Click "Forward Looking Zone" in the sidebar > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Click "mydomain.com" in the sidebar > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Right click the white space > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Click New Host (A) > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Type mainframe > <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   - Type whatever IP address (public or private?) you want (prof used dc-1's as an example) ><br> 
+&nbsp;&nbsp;&nbsp;&nbsp;   - Type whatever IP address you want (ex: cmd > ipconfig > private IP address) ><br> 
 &nbsp;&nbsp;&nbsp;&nbsp;   - Click Add Host (don't have to click any of the checkboxes above) > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Click Done <br>
 <strong> Log into Client-1 </strong><br>
@@ -85,11 +86,13 @@ Go back to DC-1 and create a CNAME record that points the host “search” to �
 <strong>To create a CNAME record</strong><br>
 &nbsp;&nbsp; - DNS manager ><br>
 &nbsp;&nbsp; - Right click + select New Alias (literally says CNAME) ><br>
-&nbsp;&nbsp;&nbsp;&nbsp;   - <em>Insert screenshot here </em><br>
+<img width="565" alt="Capture - New Alias (CName)" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/46d6ecb9-e0b7-47cb-904f-9c2801ac33d1">
+<br>
 &nbsp;&nbsp; - Literally type search in first box and www.google.com in second box (literally sooooooo easy 😩) ><br>
 &nbsp;&nbsp; - Do I need to check box? Nope > <br>
 &nbsp;&nbsp; - Click ok <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   - <em>Insert screenshot here </em><br>
+<img width="300" alt="Capture - search + google" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/77628443-22e4-4616-a93e-ec581dc1230c">
+<br>
 <strong> Switch to Client-1 </strong><br>
 &nbsp;&nbsp; - Ping “search” <br>
 &nbsp;&nbsp; - Nslookup “search” <br>
