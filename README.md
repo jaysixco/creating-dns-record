@@ -77,13 +77,14 @@ DC-1 > Forward looking zone > mydomain.com > Right click mainframe > Properties 
 &nbsp;&nbsp; - Go back to Client-1 and ping “mainframe” again. Observe that it still pings the old address (you'll recieve replies from the old IP address) <br>
 &nbsp;&nbsp; - Observe the local dns cache (ipconfig \displaydns). It will show that A (Host) Record is still the old address. <br>
 <strong>How to flush the DNS cache </strong><br>
+&nbsp;&nbsp; - Switch back to DC-1.
 &nbsp;&nbsp; - Flush the DNS cache **(ipconfig \flushdns)**. <br>
-&nbsp;&nbsp; - Ping “mainframe” again. The new record address should show up <br>
+&nbsp;&nbsp; - Ping “mainframe” again . The new record address should show up <br>
 
 <strong> CNAME Record Exercise </strong><br>
-<em> What is going on here? <br>
-
-</em>
+<em> What is going on here? <br></em>
+<br>
+<br>
 Go back to DC-1 and create a CNAME record that points the host “search” to “www.google.com” <br>
 <strong>To create a CNAME record</strong><br>
 &nbsp;&nbsp; - DNS manager ><br>
