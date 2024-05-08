@@ -78,7 +78,7 @@ DC-1 > Forward looking zone > mydomain.com > Right click mainframe > Properties 
 &nbsp;&nbsp; - Observe the local dns cache (ipconfig /displaydns). It will show that A (Host) Record is still the old address. <br>
 <strong>How to flush the DNS cache </strong><br>
 &nbsp;&nbsp; - Switch back to DC-1. <br>
-&nbsp;&nbsp; - Flush the DNS cache **(ipconfig \flushdns)**. <br>
+&nbsp;&nbsp; - Flush the DNS cache (run cmd as an administrator) **(ipconfig /flushdns)**. <br>
 &nbsp;&nbsp; - Ping “mainframe” again . The new record address should show up <br>
 <br>
 
