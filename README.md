@@ -75,7 +75,7 @@ Basically, if you change the mainframe's record address, when you ping it, it wi
 DC-1 > Forward looking zone > mydomain.com > Right click mainframe > Properties > Type 8.8.8.8 in IP address box > Click Apply > Click Ok
 <br>
 &nbsp;&nbsp; - Go back to Client-1 and ping “mainframe” again. Observe that it still pings the old address (you'll recieve replies from the old IP address) <br>
-&nbsp;&nbsp; - Observe the local dns cache (ipconfig \displaydns). It will show that A (Host) Record is still the old address. <br>
+&nbsp;&nbsp; - Observe the local dns cache (ipconfig /displaydns). It will show that A (Host) Record is still the old address. <br>
 <strong>How to flush the DNS cache </strong><br>
 &nbsp;&nbsp; - Switch back to DC-1.
 &nbsp;&nbsp; - Flush the DNS cache **(ipconfig \flushdns)**. <br>
