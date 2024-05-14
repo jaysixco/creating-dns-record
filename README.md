@@ -48,9 +48,7 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 <strong>Simplified Version:</strong><br>
 <strong>Log into DC-1 </strong><br>
 <strong>Create a DNS A-record for "mainframe"</strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;   - Server Manager > <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   - Tools (near top, to the right of the flag > <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   - DNS > <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   - On the Server Manager page, look for Tools (top right hand corner, to the right of the flag), and then click DNS > <br>
 <img width="959" alt="Capture - Tools + DNS" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/c60fa30d-a54a-45f6-8830-1f6f7f2e1f3b">
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   - Click "DC-1" in the sidebar > <br>
