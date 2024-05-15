@@ -34,7 +34,7 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 <h2>Installation Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br>
 </p>
 <p>
 <strong> A-Record Exercise </strong><br>
@@ -67,7 +67,7 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
   2. Type "cmd" in search bar <br>
   insert screenshot <br>
   3. Then ping "mainframe" (without quotation marks), If it works, you should the word "Reply" repeatedly. Like this:<br>
-  <img width="354" alt="Capture - ping + nslookup" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/3e623d41-fa39-45d4-8f65-87ec24e9a23e">
+  insert screenshot
 
 <strong> Local DNS Cache Exercise </strong><br>
 <em> What is going on here? <br>
@@ -103,8 +103,7 @@ Go back to DC-1 and create a CNAME record that points the host “search” to �
 <img width="565" alt="Capture - New Alias (CName)" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/46d6ecb9-e0b7-47cb-904f-9c2801ac33d1">
 <br>
 &nbsp;&nbsp; 3. Type "search" in the first box and "www.google.com" in second box <br>
-<img width="300" alt="Capture - search + google" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/77628443-22e4-4616-a93e-ec581dc1230c">
-insert screenshot <br>
+<img width="300" alt="Capture - search + google" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/77628443-22e4-4616-a93e-ec581dc1230c"><br>
 &nbsp;&nbsp; 4. Do I need to check box? Nope <br>
 &nbsp;&nbsp; 5. Click "Ok" <br>
 
@@ -112,7 +111,8 @@ insert screenshot <br>
 <strong> 6. Switch to Client-1 </strong><br>
 &nbsp;&nbsp; 7. Ping “search” <br>
 &nbsp;&nbsp; 8. Nslookup “search” <br>
-<strong>If you did everything correctly you should see</strong><br>
+<strong> 9. If you did everything correctly you should see: </strong><br>
+<img width="354" alt="Capture - ping + nslookup" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/3e623d41-fa39-45d4-8f65-87ec24e9a23e"><br>
 <br>
 <strong>NOTE:</strong> if above steps don't work, try flushing the cache first (ipconfig /flushdns) and then ping again. <br>
 <br>
