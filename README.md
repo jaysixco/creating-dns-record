@@ -88,8 +88,8 @@ Basically, if you change the mainframe's record address, when you ping it, it wi
 <strong> Go back to Client-1 and ping “mainframe” again </strong>. 
 - Observe that it still pings the old address (you'll recieve replies from the old IP address) (see screenshot)<br>
 
-<strong> Observe the local dns cache (ipconfig /displaydns).
-1. Type "ipconfig /displaydns"
+<strong> Observe the local dns cache </strong>.
+1. In the command prompt, type "ipconfig /displaydns"
 - It will show that A (Host) Record is still the old address. </strong> (see screenshot)<br>
 
 <strong> Flush the DNS cache </strong>
