@@ -44,7 +44,8 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
     (Both are going to fail because there is no DNS record) <br>
     So, log into DC-1 with your domain admin account (mydomain.com\jane_admin) and create a DNS A-record for "mainframe" <br>
     Have the DNS A-record point to DC-1’s Private IP address <br>
-    Log back into Client-1 and ping "mainframe" again. It should work this time. <br></em>
+    Log back into Client-1 and ping "mainframe" again. It should work this time. </em>
+  
 <strong>Simplified Version:</strong><br>
 <strong>Log into DC-1 </strong><br>
 <strong>Create a DNS A-record for "mainframe"</strong><br>
@@ -61,19 +62,18 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   8. Type whatever IP address you want (ex: cmd > ipconfig > private IP address) ><br> 
 &nbsp;&nbsp;&nbsp;&nbsp;   9. Click Add Host (don't have to click any of the checkboxes above) > <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   10. Click Done <br>
-  <br>
+
 <strong> Ping the mainframe to see if it works </strong><br>
-  1. Log into Client-1 <br>
-  2. Type "cmd" in search bar <br>
-  insert screenshot <br>
-  3. Then ping "mainframe" (without quotation marks), If it works, you should the word "Reply" repeatedly. Like this:<br>
-  insert screenshot
+  1. Log in to Client-1 <br>
+  2. Type "cmd" in search bar (see screenshot) <br>
+  3. Then ping "mainframe". If it works, you should the word "Reply" repeatedly, like this: //insert screenshot below, red rectangle box around word(s) "Reply"
 
 <strong> Local DNS Cache Exercise </strong><br>
 <em> What is going on here? <br>
 Basically, if you change the mainframe's record address, when you ping it, it will still show the old record address until you flush the DNS cache. <br>
 <strong>To see for yourself </strong>: 
-</em> <br>
+</em>
+
 <strong> Log in to DC-1 and change mainframe’s record address to 8.8.8.8 </strong><br> 
   1. Log in to DC-1 <br>
   2. Forward looking zone <br>
@@ -84,34 +84,35 @@ Basically, if you change the mainframe's record address, when you ping it, it wi
   7. Click "Apply" <br>
   8. Click "Ok" <br>
   <em> insert screenshots sonewhere in above steps </em>
-<br>
-&nbsp;&nbsp; 1. Go back to Client-1 and ping “mainframe” again. Observe that it still pings the old address (you'll recieve replies from the old IP address) <br>
-&nbsp;&nbsp; 2. Observe the local dns cache (ipconfig /displaydns). It will show that A (Host) Record is still the old address. <br>
-<strong> Flush the DNS cache </strong><br>
-&nbsp;&nbsp; 1. Switch back to DC-1. <br>
-&nbsp;&nbsp; 2. Flush the DNS cache (run cmd as an administrator) **(ipconfig /flushdns)**. <br>
-&nbsp;&nbsp; 3. Ping “mainframe” again . The new record address should show up <br>
-<br>
+  
+<strong> Go back to Client-1 and ping “mainframe” again </strong>. 
+- Observe that it still pings the old address (you'll recieve replies from the old IP address) (see screenshot)<br>
 
-<br>
+<strong> Observe the local dns cache (ipconfig /displaydns).
+1. Type "ipconfig /displaydns"
+- It will show that A (Host) Record is still the old address. </strong> (see screenshot)<br>
+
+<strong> Flush the DNS cache </strong>
+1. Run cmd as an administrator <br>
+- Type "cmd" in the start menu search box, right click "Command Prompt", and click "Run as an administrator" (see screenshot) <br>
+2. Type "ipconfig /flushdns" then ping “mainframe” again.  The new record address should show up </strong> (see screenshot)<br>
+
 <strong> CNAME Record Exercise </strong><br>
 <em> What is going on here? <br></em>
-Go back to DC-1 and create a CNAME record that points the host “search” to “www.google.com” <br>
-<strong> Create a CNAME record</strong><br>
-&nbsp;&nbsp; 1. DNS manager <br>
-&nbsp;&nbsp; 2. Right click + select New Alias (literally says CNAME) ><br>
+
+<strong> Go back to DC-1 and create a CNAME record that points the host "search" to "google.com"</strong><br>
+1. DNS manager <br>
+- In the Server page, look for Tools (top right hand corner, to the right of the flag), and then click DNS (see screenshot, copy and paste it from line 52)
+2. Right click + select New Alias (literally says CNAME) ><br>
 <img width="565" alt="Capture - New Alias (CName)" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/46d6ecb9-e0b7-47cb-904f-9c2801ac33d1">
 <br>
-&nbsp;&nbsp; 3. Type "search" in the first box and "www.google.com" in second box <br>
+3. Type "search" in the first box and "www.google.com" in second box <br>
 <img width="300" alt="Capture - search + google" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/77628443-22e4-4616-a93e-ec581dc1230c"><br>
-&nbsp;&nbsp; 4. Do I need to check box? Nope <br>
-&nbsp;&nbsp; 5. Click "Ok" <br>
+4. Leave the box unchecked and Click "Ok" (see screenshot) <br>
 
-<br>
-<strong> 6. Switch to Client-1 </strong><br>
-&nbsp;&nbsp; 7. Ping “search” <br>
-&nbsp;&nbsp; 8. Nslookup “search” <br>
-<strong> 9. If you did everything correctly you should see: </strong><br>
+<strong> Switch to Client-1 </strong><br>
+1. Open up the command prompt. Type "ping search” then hit enter. Type "nslookup search” then hit enter. <br>
+2. If you did everything correctly you should see: </strong><br>
 <img width="354" alt="Capture - ping + nslookup" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/3e623d41-fa39-45d4-8f65-87ec24e9a23e"><br>
 <br>
 <strong>NOTE:</strong> if above steps don't work, try flushing the cache first (ipconfig /flushdns) and then ping again. <br>
