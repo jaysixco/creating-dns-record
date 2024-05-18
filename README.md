@@ -105,15 +105,14 @@ Basically, if you change the mainframe's record address, when you ping it, it wi
 <br>
 3. Type "search" in the first box and "www.google.com" in the second box <br>
 <img width="300" alt="Capture - search + google" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/77628443-22e4-4616-a93e-ec581dc1230c"><br>
-4. Leave the box unchecked and Click "Ok" (see screenshot)
-
-
+4. Leave the box unchecked and Click "Ok" (see screenshot) <br>
+<br>
 <strong> Switch to Client-1 </strong><br>
 1. Open up the command prompt. Type "ping search” then hit enter. Type "nslookup search” then hit enter. <br>
 2. If you did everything correctly you should see: </strong><br>
 <img width="354" alt="Capture - ping + nslookup" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/3e623d41-fa39-45d4-8f65-87ec24e9a23e"><br>
 <br>
-<strong>NOTE:</strong> if above steps don't work, try flushing the cache first (ipconfig /flushdns) and then ping again. <br>
+<strong>NOTE:</strong> if above steps don't work, try flushing the cache (type "ipconfig /flushdns") and then try step 1 again. <br>
 <br>
 <strong> Finish </strong>
 
