@@ -89,26 +89,24 @@ Basically, if you change the mainframe's record address, when you ping it, it wi
 - Observe that it still pings the old address (you'll recieve replies from the old IP address) (see screenshot)<br>
 
 <strong> Observe the local dns cache </strong>.
-1. In the command prompt, type "ipconfig /displaydns"
-- It will show that A (Host) Record is still the old address. </strong> (see screenshot)<br>
+1. In the command prompt, type "ipconfig /displaydns". It will show that A (Host) Record is still the old address. </strong> (see screenshot)<br>
 
 <strong> Flush the DNS cache </strong>
-1. Run cmd as an administrator <br>
-- Type "cmd" in the start menu search box, right click "Command Prompt", and click "Run as an administrator" (see screenshot) <br>
-2. Type "ipconfig /flushdns" then ping “mainframe” again.  The new record address should show up </strong> (see screenshot)<br>
+1. Run cmd as an administrator. Type "cmd" in the start menu search box, right click "Command Prompt", and click "Run as an administrator" (see screenshot) <br>
+2. Type "ipconfig /flushdns" then type "ping mainframe” again.  The new record address should show up </strong> (see screenshot)<br>
 
 <strong> CNAME Record Exercise </strong><br>
 <em> What is going on here? <br></em>
 
 <strong> Go back to DC-1 and create a CNAME record that points the host "search" to "google.com"</strong><br>
-1. DNS manager <br>
-- In the Server page, look for Tools (top right hand corner, to the right of the flag), and then click DNS (see screenshot, copy and paste it from line 52)
-2. Right click + select New Alias (literally says CNAME) ><br>
+1. Open the DNS manager. In the Server page, look for Tools (top right hand corner, to the right of the flag), and then click DNS (see screenshot, copy and paste it from line 52)
+2. Right click any white section of the screen, then click "New Alias (CNAME)" ><br>
 <img width="565" alt="Capture - New Alias (CName)" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/46d6ecb9-e0b7-47cb-904f-9c2801ac33d1">
 <br>
-3. Type "search" in the first box and "www.google.com" in second box <br>
+3. Type "search" in the first box and "www.google.com" in the second box <br>
 <img width="300" alt="Capture - search + google" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/77628443-22e4-4616-a93e-ec581dc1230c"><br>
-4. Leave the box unchecked and Click "Ok" (see screenshot) <br>
+4. Leave the box unchecked and Click "Ok" (see screenshot)
+
 
 <strong> Switch to Client-1 </strong><br>
 1. Open up the command prompt. Type "ping search” then hit enter. Type "nslookup search” then hit enter. <br>
