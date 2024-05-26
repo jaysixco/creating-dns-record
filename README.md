@@ -49,24 +49,24 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 <strong>Simplified Version:</strong><br>
 <strong>Log into DC-1 </strong><br>
 <strong>Create a DNS A-record for "mainframe"</strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;   1. On the Server Manager page, look for Tools (top right hand corner, to the right of the flag), and then click DNS <br>
+1. On the Server Manager page, look for Tools (top right hand corner, to the right of the flag), and then click DNS <br>
   <br>
 <img width="959" alt="Capture - Tools + DNS" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/c60fa30d-a54a-45f6-8830-1f6f7f2e1f3b">
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   2. Click "DC-1" in the sidebar > <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   3. Click "Forward Looking Zone" in the sidebar > <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   4. Click "mydomain.com" in the sidebar > <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   5. Right click the white space > <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   6. Click New Host (A) > <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   7. Type mainframe > <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   8. Type whatever IP address you want (ex: cmd > ipconfig > private IP address) ><br> 
-&nbsp;&nbsp;&nbsp;&nbsp;   9. Click Add Host (don't have to click any of the checkboxes above) > <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   10. Click Done <br>
+2. Click "DC-1" in the sidebar > <br>
+3. Click "Forward Looking Zone" in the sidebar > <br>
+4. Click "mydomain.com" in the sidebar > <br>
+5. Right click the white space > <br>
+6. Click New Host (A) > <br>
+7. Type mainframe > <br>
+8. Type whatever IP address you want (ex: cmd > ipconfig > private IP address) ><br> 
+9. Click Add Host (don't have to click any of the checkboxes above) > <br>
+10. Click Done <br>
 
 <strong> Ping the mainframe to see if it works </strong><br>
-  1. Log in to Client-1 <br>
-  2. Type "cmd" in search bar (see screenshot) <br>
-  3. Then ping "mainframe". If it works, you should the word "Reply" repeatedly, like this: //insert screenshot below, red rectangle box around word(s) "Reply"
+1. Log in to Client-1 <br>
+2. Type "cmd" in search bar (see screenshot) <br>
+3. Then ping "mainframe". If it works, you should the word "Reply" repeatedly, like this: //insert screenshot below, red rectangle box around word(s) "Reply"
 
 <strong> Local DNS Cache Exercise </strong><br>
 <em> What is going on here? <br>
@@ -75,18 +75,18 @@ Basically, if you change the mainframe's record address, when you ping it, it wi
 </em>
 
 <strong> Log in to DC-1 and change mainframe’s record address to 8.8.8.8 </strong><br> 
-  1. Log in to DC-1 <br>
-  2. Forward looking zone <br>
-  3. mydomain.com <br>
-  4. Right click mainframe <br>
-  5. Properties <br>
-  6. Type 8.8.8.8 in IP address box <br>
-  7. Click "Apply" <br>
-  8. Click "Ok" <br>
+1. Log in to DC-1 <br>
+2. Forward looking zone <br>
+3. mydomain.com <br>
+4. Right click mainframe <br>
+5. Properties <br>
+6. Type 8.8.8.8 in IP address box <br>
+7. Click "Apply" <br>
+8. Click "Ok" <br>
   <em> insert screenshots sonewhere in above steps </em>
   
 <strong> Go back to Client-1 and ping “mainframe” again </strong>. 
-- Observe that it still pings the old address (you'll recieve replies from the old IP address) (see screenshot)<br>
+1. Observe that it still pings the old address (you'll recieve replies from the old IP address) (see screenshot)<br>
 
 <strong> Observe the local dns cache </strong>.
 1. In the command prompt, type "ipconfig /displaydns". It will show that A (Host) Record is still the old address. </strong> (see screenshot)<br>
