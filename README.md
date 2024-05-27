@@ -69,8 +69,9 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 <strong> Ping the mainframe to see if it works </strong><br>
 1. Log in to Client-1 <br>
 2. Type "cmd" in search bar (see screenshot) <br>
-3. Then ping "mainframe". If it works, you should the word "Reply" repeatedly, like this: //insert screenshot below, red rectangle box around word(s) "Reply"
-(client1,#1)
+3. Then ping "mainframe". If it works, you should the word "Reply" repeatedly, like this: //insert screenshot below, red rectangle box around word(s) "Reply" <br>
+<img width="674" alt="#1" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/2c14f1e5-807c-48e1-9082-287933852584">
+
 
 <strong> Local DNS Cache Exercise </strong><br>
 <em> What is going on here? <br>
