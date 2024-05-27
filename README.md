@@ -70,6 +70,7 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 1. Log in to Client-1 <br>
 2. Type "cmd" in search bar (see screenshot) <br>
 3. Then ping "mainframe". If it works, you should the word "Reply" repeatedly, like this: //insert screenshot below, red rectangle box around word(s) "Reply"
+(client1,#1)
 
 <strong> Local DNS Cache Exercise </strong><br>
 <em> What is going on here? <br>
