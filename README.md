@@ -53,14 +53,14 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
   <br>
 <img width="959" alt="Capture - Tools + DNS" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/c60fa30d-a54a-45f6-8830-1f6f7f2e1f3b">
   <br>
-&nbsp; 2. Click "DC-1" in the sidebar > <br>
-&nbsp; 3. Click "Forward Looking Zone" in the sidebar > <br>
-&nbsp; 4. Click "mydomain.com" in the sidebar > <br>
-&nbsp; 5. Right click the white space > <br>
-&nbsp; 6. Click New Host (A) > <br>
-&nbsp; 7. Type mainframe > <br>
-&nbsp; 8. Type whatever IP address you want (ex: cmd > ipconfig > private IP address) ><br> 
-&nbsp; 9. Click Add Host (don't have to click any of the checkboxes above) > <br>
+&nbsp; 2. Click "DC-1" in the sidebar <br>
+&nbsp; 3. Click "Forward Looking Zone" in the sidebar <br>
+&nbsp; 4. Click "mydomain.com" in the sidebar <br>
+&nbsp; 5. Right click the white space <br>
+&nbsp; 6. Click New Host (A) <br>
+&nbsp; 7. Type mainframe <br>
+&nbsp; 8. Type whatever IP address you want (ex: cmd > ipconfig > private IP address) <br> 
+&nbsp; 9. Click Add Host (don't have to click any of the checkboxes above) <br>
 &nbsp; 10. Click Done <br>
 
 <strong> Ping the mainframe to see if it works </strong><br>
