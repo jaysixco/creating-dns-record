@@ -54,14 +54,17 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 <img width="959" alt="Capture - Tools + DNS" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/c60fa30d-a54a-45f6-8830-1f6f7f2e1f3b">
   <br>
 &nbsp; 2. Click "DC-1" in the sidebar (1), Click "Forward Looking Zone" in the sidebar (2), Double click "mydomain.com" in the sidebar (3) <br>
-(Dc1,#1) <br>
+<img width="565" alt="#1" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/e617d68e-8416-42b3-8be8-5099250b848d"> <br>
 &nbsp; 3. Right click the white space, Click "New Host (A or AAAA)" <br>
-(Dc1,#2) <br>
+<img width="565" alt="#2" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/236a631a-0ec3-46d4-8353-b7346bf91bbe">
+<br>
 &nbsp; 4. For the "Name" type mainframe <br>
 &nbsp; 5. For the IP address, open up command prompt, type "ipconfig" (1) and look at the number for "IPv4 Address" (2) <br>
-(dc1,#3) <br>
+<img width="674" alt="#3" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/1e0a6f8f-8c33-460d-98a0-887240c54c0f">
+ <br>
 &nbsp; 6. After you type the "Name" and "IP address" click Add Host. After it is added, click "Done" <br>
-(dc1,#4) <br>
+<img width="257" alt="#4" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/f0970c61-bf1d-4f9b-9112-9c4321a14fa8">
+<br>
 
 <strong> Ping the mainframe to see if it works </strong><br>
 1. Log in to Client-1 <br>
