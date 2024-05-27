@@ -76,10 +76,10 @@ Basically, if you change the mainframe's record address, when you ping it, it wi
 
 <strong> Log in to DC-1 and change mainframe’s record address to 8.8.8.8 </strong><br> 
 1. Log in to DC-1 <br>
-2. Forward looking zone <br>
-3. mydomain.com <br>
-4. Right click mainframe <br>
-5. Properties <br>
+2. Click "Forward Looking Zone" <br>
+3. Click "mydomain.com" <br>
+4. Right click "mainframe" <br>
+5. Click "Properties" <br>
 6. Type 8.8.8.8 in IP address box <br>
 7. Click "Apply" <br>
 8. Click "Ok" <br>
