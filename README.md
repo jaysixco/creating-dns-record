@@ -80,15 +80,11 @@ Basically, if you change the mainframe's record address, when you ping it, it wi
 </em>
 
 <strong> Log in to DC-1 and change mainframe’s record address to 8.8.8.8 </strong><br> 
-1. Log in to DC-1 <br>
-2. Click "Forward Looking Zone" <br>
-3. Click "mydomain.com" <br>
-4. Right click "mainframe" <br>
-5. Click "Properties" <br>
-6. Type 8.8.8.8 in IP address box <br>
-7. Click "Apply" <br>
-8. Click "Ok" <br>
-  <em> insert screenshots sonewhere in above steps </em>
+1. Go to DNS server (Server Manager page > Tools > DNS) <br>
+2. Click the small arrow next to "Forward Looking Zone" (1), Click "mydomain.com" (2), Right click "mainframe" (3), Click "Properties" (4) <br>
+(dc1,#1)
+3. Type 8.8.8.8 in IP address box (1), Click "Apply" (2), then Click "Ok" (3) <br>
+(#2)
   
 <strong> Go back to Client-1 and ping “mainframe” again </strong>. 
 1. Observe that it still pings the old address (you'll recieve replies from the old IP address) (see screenshot)<br>
