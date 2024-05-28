@@ -87,14 +87,16 @@ Basically, if you change the mainframe's record address, when you ping it, it wi
 <img width="300" alt="#2" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/cc791ccc-6dac-4314-81c8-8742852e5247"> <br>
 
 <strong> Go back to Client-1 and ping “mainframe” again </strong>. 
-1. Observe that it still pings the old address (you'll recieve replies from the old IP address) (see screenshot)<br>
+1. In Client-1, open command prompt, then type "ping mainframe". Observe that it still pings the old address (you'll recieve replies from the old IP address)<br>
+(c1,#1) <br>
 
 <strong> Observe the local dns cache </strong>.
-1. In the command prompt, type "ipconfig /displaydns". It will show that A (Host) Record is still the old address. </strong> (see screenshot)<br>
+1. In the command prompt, type "ipconfig /displaydns". If you scroll, it will show that "A (Host) Record" for "mainframe" header is still the old address. <br>
+(c1,#2) <br>
 
 <strong> Flush the DNS cache </strong>
-1. Run cmd as an administrator. Type "cmd" in the start menu search box, right click "Command Prompt", and click "Run as an administrator" (see screenshot) <br>
-2. Type "ipconfig /flushdns" then type "ping mainframe” again.  The new record address should show up </strong> (see screenshot)<br>
+1. Run cmd as an administrator. Type "cmd" in the start menu search box, right click "Command Prompt", and click "Run as an administrator" <br>
+3. Type "ipconfig /flushdns" then type "ping mainframe” again.  The new record address should show up </strong> (see screenshot)<br>
 
 <strong> CNAME Record Exercise </strong><br>
 <em> What is going on here? <br></em>
