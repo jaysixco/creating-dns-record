@@ -70,9 +70,9 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 
 <strong> Ping the mainframe to see if it works </strong><br>
 1. Log in to Client-1 <br>
-2. 1) Type "cmd" in Start search bar (1). Click "Command Prompt System" (2) or "Open"(3) <br>
+2. Type "cmd" in Start search bar (1). Click "Command Prompt System" (2) or "Open"(3) <br>
 <img width="588" alt="cmd login" src="https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/1e67d49c-b11b-4949-aab0-1db1fb3097f6"> <br>
-3. Then ping "mainframe". If it works, you should the word "Reply" repeatedly, like this: //insert screenshot below, red rectangle box around word(s) "Reply" <br>
+3. Then ping "mainframe". If it works, you should the word "Reply" repeatedly, like this: <br>
 <img width="674" alt="#1" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/2c14f1e5-807c-48e1-9082-287933852584">
 
 
@@ -91,14 +91,14 @@ Basically, if you change the mainframe's record address, when you ping it, it wi
 3. Type 8.8.8.8 in IP address box (1), Click "Apply" (2), then Click "Ok" (3) <br>
 <img width="300" alt="#2" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/cc791ccc-6dac-4314-81c8-8742852e5247"> <br>
 
-<strong> Go back to Client-1 and ping “mainframe” again </strong>. 
+<strong> Go back to Client-1 and ping “mainframe” again </strong>
 1. In Client-1, open command prompt. Type "cmd" in Start search bar (1). Click "Command Prompt System" (2) or "Open"(3) <br>
 <img width="588" alt="cmd login" src="https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/1e67d49c-b11b-4949-aab0-1db1fb3097f6"> <br>
 2. Type "ping mainframe". Observe that it still pings the old address (you'll recieve replies from the old IP address)<br>
 <img width="674" alt="#1" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/5e675bd6-7648-447d-afe8-965cb88a73a1">
 <br>
 
-<strong> Observe the local dns cache </strong>.
+<strong> Observe the local dns cache </strong>
 1. In the command prompt page, type "ipconfig /displaydns". If you scroll, it will show that "A (Host) Record" for "mainframe" header is still the old address. <br>
 <img width="674" alt="#2" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/724eb092-1219-4e98-9d8d-d04646840f89">
 <br>
@@ -133,8 +133,8 @@ Basically, if you change the mainframe's record address, when you ping it, it wi
 <strong> Finish </strong>
 
 <p>
-  Accurate and can follow along. Fix formatting.
-  Run cmd as admin screenshot
-  Add a few more screenshots
-  Add red rectangles and numbers to some of the screenshots I already have
+  Accurate and can follow along. Fix formatting. <br>
+  Run cmd as admin screenshot <br>
+  Add a few more screenshots <br>
+  Add red rectangles and numbers to some of the screenshots I already have <br>
 </p>
