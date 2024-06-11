@@ -53,18 +53,19 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
   <br>
 <img width="959" alt="Capture - Tools + DNS" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/c60fa30d-a54a-45f6-8830-1f6f7f2e1f3b">
   <br>
-&nbsp; 2. Click "DC-1" in the sidebar (1), Click "Forward Looking Zone" in the sidebar (2), Double click "mydomain.com" in the sidebar (3) <br>
+2. Click the name of your DC-1 VM in the sidebar (1), then click the little arrow that pops up next to VM name (2) click "Forward Looking Zone" in the sidebar (3), Double click "mydomain.com" <br>
 <img width="565" alt="#1" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/e617d68e-8416-42b3-8be8-5099250b848d"> <br>
-&nbsp; 3. Right click the white space, Click "New Host (A or AAAA)" <br>
+3. Right click the white space, Click "New Host (A or AAAA)" <br>
 <img width="565" alt="#2" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/236a631a-0ec3-46d4-8353-b7346bf91bbe">
 <br>
-&nbsp; 4. For the "Name" type mainframe (add screenshot) <br>
-&nbsp; 5. For the IP address, open up command prompt. Type "cmd" in Start search bar (1). Click "Command Prompt System" (2) or "Open"(3) <br>
+4. For the "Name" type mainframe<br>
+<img width="257" alt="type mainframe" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/175810f6-f965-4943-8286-7082d0eced17">
+5. For the IP address, open up command prompt. Type "cmd" in Start search bar (1). Click "Command Prompt System" (2) or "Open"(3) <br>
 <img width="588" alt="cmd login" src="https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/1e67d49c-b11b-4949-aab0-1db1fb3097f6"> <br>
-&nbsp; 6. Type "ipconfig" (1) and look at the number for "IPv4 Address" (2) <br>
+6. Type "ipconfig" (1) and look at the number for "IPv4 Address" (2) <br>
 <img width="674" alt="#3" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/1e0a6f8f-8c33-460d-98a0-887240c54c0f">
  <br>
-&nbsp; 7. After you type the "Name" and "IP address" click "Add Host". After it is added, click "Done" <br>
+7. After you type the "Name" and "IP address" click "Add Host". After it is added, click "Done" <br>
 <img width="257" alt="#4" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/f0970c61-bf1d-4f9b-9112-9c4321a14fa8">
 <br>
 
