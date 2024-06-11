@@ -131,8 +131,6 @@ Basically, if you change the mainframe's record address, when you ping it, it wi
 2. Type "ping search” then hit enter. Type "nslookup search” then hit enter. If you did everything correctly you should see: </strong><br>
 <img width="354" alt="Capture - ping + nslookup" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/3e623d41-fa39-45d4-8f65-87ec24e9a23e"><br>
 <br>
-<strong>NOTE:</strong> if above steps don't work, try flushing the cache (type "ipconfig /flushdns") and then try step 1 again. <br>
-<br>
 <strong> Finish </strong>
 
 <p>
