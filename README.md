@@ -107,7 +107,8 @@ Basically, if you change the mainframe's record address, when you ping it, it wi
 <strong> Flush the DNS cache </strong>
 1. Run cmd as an administrator. Type "cmd" in the start menu search box, right click "Command Prompt", and click "Run as an administrator"<br>
 <img width="623" alt="run cmd as an admin" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/c243d298-e781-4dbc-97cb-d5043efca595">
-3. Type "ipconfig /flushdns" then type "ping mainframe” again.  The new record address should show up </strong> (add screenshot)<br>
+3. Type "ipconfig /flushdns" (1) then type "ping mainframe” again (2).  The new record address should show up </strong><br>
+<img width="674" alt="flushing the dns, then pinging mainframe again" src="https://github.com/jaysixco/creating-dns-record/assets/160427311/8504018d-d465-4576-a1f1-bea575e3b340">
 
 <strong> CNAME Record Exercise </strong><br>
 <em> What is going on here? <br></em>
