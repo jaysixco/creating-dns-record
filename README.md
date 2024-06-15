@@ -135,7 +135,5 @@ Basically, if you change the mainframe's record address, when you ping it, it wi
 
 <p>
   Accurate and can follow along. Fix formatting. <br>
-  Run cmd as admin screenshot <br>
-  Add a few more screenshots <br>
   Add red rectangles and numbers to some of the screenshots I already have <br>
 </p>
