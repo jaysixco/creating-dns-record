@@ -1,9 +1,8 @@
 # creating-dns-record
 
 <h1>Summary</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
-In this tutorial, you are going to play 3 roles:  administrator, agent, user <br>
-In this tutorial, you/we are going to be creating and delegating tickets <br>
+In this tutorial we are going to create a *DNS record. <br>
+<em>*A DNS record is like a book of addresses. Within the DNS record, you have the A record (which is the actual address) and a CNAME (which is like a nickname).</em>
 
 <h2>Environments and Technologies Used</h2>
 
