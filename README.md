@@ -8,7 +8,6 @@ In this tutorial we are going to create a *DNS record. <br>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Internet Information Services (IIS)
 
 <h2>Operating Systems Used </h2>
 
